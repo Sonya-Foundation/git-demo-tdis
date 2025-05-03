@@ -13,7 +13,7 @@ public class TDIS {
         System.out.println("  TÜRKİYE DEPREM İZLEME SİSTEMİ (TDIS)");
         System.out.println("===========================================");
         
-        boolean devam = true;
+        boolean devam = false;
         
         while (devam) {
             menuGoster();
