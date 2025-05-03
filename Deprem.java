@@ -2,68 +2,68 @@
  * Deprem sınıfı - Bir depremin temel özelliklerini içerir
  */
 public class Deprem {
-    private String tarih;
-    private String saat;
-    private double buyukluk;
-    private String konum;
-    private double derinlik;
+    private String depremTarihi;
+    private String depremSaati;
+    private double depremBuyuklugu;
+    private String depremKonumu;
+    private double depremDerinligi;
 
     /**
      * Deprem sınıfı yapıcı metodu
      * 
-     * @param tarih    Depremin gerçekleştiği tarih
-     * @param saat     Depremin gerçekleştiği saat
-     * @param buyukluk Depremin büyüklüğü (Richter ölçeği)
-     * @param konum    Depremin konumu
-     * @param derinlik Depremin derinliği (km)
+     * @param depremTarihi    Depremin gerçekleştiği tarih
+     * @param depremSaati     Depremin gerçekleştiği saat
+     * @param depremBuyuklugu Depremin büyüklüğü (Richter ölçeği)
+     * @param depremKonumu    Depremin konumu
+     * @param depremDerinligi Depremin derinliği (km)
      */
-    public Deprem(String tarih, String saat, double buyukluk, String konum, double derinlik) {
-        this.tarih = tarih;
-        this.saat = saat;
-        this.buyukluk = buyukluk;
-        this.konum = konum;
-        this.derinlik = derinlik;
+    public Deprem(String depremTarihi, String depremSaati, double depremBuyuklugu, String depremKonumu, double depremDerinligi) {
+        this.depremTarihi = depremTarihi;
+        this.depremSaati = depremSaati;
+        this.depremBuyuklugu = depremBuyuklugu;
+        this.depremKonumu = depremKonumu;
+        this.depremDerinligi = depremDerinligi;
     }
 
     // Getter ve Setter metodları
-    public String getTarih() {
-        return tarih;
+    public String getDepremTarihi() {
+        return depremTarihi;
     }
 
-    public void setTarih(String tarih) {
-        this.tarih = tarih;
+    public void setDepremTarihi(String depremTarihi) {
+        this.depremTarihi = depremTarihi;
     }
 
-    public String getSaat() {
-        return saat;
+    public String getDepremSaati() {
+        return depremSaati;
     }
 
-    public void setSaat(String saat) {
-        this.saat = saat;
+    public void setDepremSaati(String depremSaati) {
+        this.depremSaati = depremSaati;
     }
 
-    public double getBuyukluk() {
-        return buyukluk;
+    public double getDepremBuyuklugu() {
+        return depremBuyuklugu;
     }
 
-    public void setBuyukluk(double buyukluk) {
-        this.buyukluk = buyukluk;
+    public void setDepremBuyuklugu(double depremBuyuklugu) {
+        this.depremBuyuklugu = depremBuyuklugu;
     }
 
-    public String getKonum() {
-        return konum;
+    public String getDepremKonumu() {
+        return depremKonumu;
     }
 
-    public void setKonum(String konum) {
-        this.konum = konum;
+    public void setDepremKonumu(String depremKonumu) {
+        this.depremKonumu = depremKonumu;
     }
 
-    public double getDerinlik() {
-        return derinlik;
+    public double getDepremDerinligi() {
+        return depremDerinligi;
     }
 
-    public void setDerinlik(double derinlik) {
-        this.derinlik = derinlik;
+    public void setDepremDerinligi(double depremDerinligi) {
+        this.depremDerinligi = depremDerinligi;
     }
 
     /**
@@ -72,6 +72,6 @@ public class Deprem {
     @Override
     public String toString() {
         return String.format("Tarih: %s | Saat: %s | Büyüklük: %.1f | Konum: %s | Derinlik: %.1f km",
-                tarih, saat, buyukluk, konum, derinlik);
+                depremTarihi, depremSaati, depremBuyuklugu, depremKonumu, depremDerinligi);
     }
 }
