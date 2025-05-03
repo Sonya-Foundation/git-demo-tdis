@@ -14,6 +14,7 @@ public class DepremKayit {
         this.depremListesi = new ArrayList<>();
         // Örnek veriler ekle
         ornekVerileriEkle();
+        System.out.println("Kayıtlar eklendi.");
     }
 
     /**
