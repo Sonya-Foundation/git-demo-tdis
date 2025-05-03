@@ -38,8 +38,8 @@ public class Deprem {
         return saat;
     }
 
-    public void setSaat(String saat) {
-        this.saat = saat;
+    public String getSaat() {
+        return saat + " (TSI)";
     }
 
     public double getBuyukluk() {
